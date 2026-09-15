@@ -23,7 +23,8 @@ As for the parameters, I used `-i eth0` to specify the interface, which is the i
 
 Now for the attack part, first thing I did was IP forwarding. It is necessary because victim’s packets and gateway’s packets will be directed to us. But if there is no forwarding, the victim can’t go on the internet and this may raise suspicion. To forward IPs, I ran the command below:
 
-echo 1 > /proc/sys/net/ipv4/ip_forward
+```echo 1 > /proc/sys/net/ipv4/ip_forward```
+
 IP forwarding is set to 0 by default. Because this change is made dynamically in memory, it resets upon every reboot, meaning you need to re-enable it.
 
 I opened two separate terminal windows on Kali. I ran the first command below, which tells the gateway that we are Windows (-t being target):
