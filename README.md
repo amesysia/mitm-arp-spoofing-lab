@@ -1,4 +1,7 @@
 # My Lab Environment and First MITM Attack
+
+[Read the full write-up on Medium](https://medium.com/@adasudcelik/my-lab-environment-and-first-mitm-attack-9bd67eb6b8fa)
+
 Welcome to my first cybersecurity write-up. In this write-up, I will be sharing how I configured an isolated lab environment using VirtualBox and executed my first ever Man in the Middle (MITM) attack, also known as ARP spoofing attack.
 
 As for my lab environment, I downloaded and installed both Kali and Windows 7 machines. Then I set up a NAT Network for them, an isolated network for these machines to communicate.
