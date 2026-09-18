@@ -16,7 +16,7 @@ Kali’s IP address was not there because the two machines hadn’t communicated
 
 ![description](screenshots/screenshot-2.png)
 
-I ran the command below on Linux:
+To discover devices on the network, I ran netdiscover. It's a tool that scans the network and lists active devices with their IP and MAC addresses.
 
 ```netdiscover -i eth0 -r 10.0.2.0/24 -c 100```
 
